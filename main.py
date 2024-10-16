@@ -1,13 +1,8 @@
 fees=238000
 classes=48
-std_attendance=int(input("insert a number:"))
-std_fee_paid=int(input("insert a number:"))
-if fees>200000:
-    print("eligible")
+std_attendance=int(input("insert number of classes:"))
+std_fee_paid=int(input("insert fee paid:"))
+if std_fee_paid>=200000 and std_attendance>=40:
+    print("you are eligible")
 else:
-    print("non eligible")
-    
-if classes>40:
-    print("eligible")
-if classes<40:
-    print("non eligible")
+    print("you are not eligibile for the exam due to unpaid fees and little attendance")
